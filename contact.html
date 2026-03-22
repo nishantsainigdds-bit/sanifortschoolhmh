@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Sanifort Pre-School in Hanumangarh. Call 9571148082 or fill our inquiry form." />
+  <meta name="robots" content="index, follow" />
+  <title>Contact Us | Sanifort Pre-School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌟</div>
+        <div class="logo-text">
+          <span class="logo-main">Sanifort</span>
+          <span class="logo-sub">Pre-School</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="admissions.html" class="nav-cta">Enroll Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+    <div class="page-hero-content">
+      <h1>Contact <span>Us</span></h1>
+      <p>We'd love to hear from you — reach out anytime!</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+    </div>
+    <div class="page-hero-deco">
+      <span>📞</span><span>📍</span><span>✉️</span><span>💬</span>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO CARDS -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-card-icon" style="background:#FFF3CD">📍</div>
+          <h4>Visit Us</h4>
+          <p>Sanifort Pre-School<br />Hanumangarh, Rajasthan<br />India – 335513</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon" style="background:#D4EDDA">📞</div>
+          <h4>Call Us</h4>
+          <p><a href="tel:9571148082">9571148082</a></p>
+          <p>Mon–Sat: 8:00 AM – 5:00 PM</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon" style="background:#CCE5FF">✉️</div>
+          <h4>Email Us</h4>
+          <p><a href="mailto:info@sanifort.edu.in">info@sanifort.edu.in</a></p>
+          <p>We reply within 24 hours</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon" style="background:#D4EDDA">💬</div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/919571148082" target="_blank">Chat on WhatsApp</a></p>
+          <p>Quick responses guaranteed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP + FORM -->
+  <section class="section-pad bg-soft">
+    <div class="container">
+      <div class="contact-main-grid">
+        <!-- INQUIRY FORM -->
+        <div class="inq-form-wrap">
+          <div class="label">Send a Message</div>
+          <h2>Get in <span class="highlight">Touch</span></h2>
+          <p>Have questions about admissions, programs, or anything else? We're here to help!</p>
+          <form class="inquiry-form" id="inquiryForm" novalidate>
+            <div class="f-row">
+              <div class="f-group">
+                <label for="inqName">Your Name *</label>
+                <input type="text" id="inqName" name="name" placeholder="Enter your full name" required />
+              </div>
+              <div class="f-group">
+                <label for="inqPhone">Phone Number *</label>
+                <input type="tel" id="inqPhone" name="phone" placeholder="10-digit mobile number" required />
+              </div>
+            </div>
+            <div class="f-group">
+              <label for="inqEmail">Email Address</label>
+              <input type="email" id="inqEmail" name="email" placeholder="Your email address" />
+            </div>
+            <div class="f-group">
+              <label for="inqSubject">Subject *</label>
+              <select id="inqSubject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="admission">Admission Inquiry</option>
+                <option value="programs">Program Information</option>
+                <option value="fees">Fee Structure</option>
+                <option value="visit">Book a School Visit</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="inqMessage">Your Message *</label>
+              <textarea id="inqMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div class="form-success" id="inquirySuccess" style="display:none;">
+            <div class="success-icon">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="map-wrap">
+          <div class="label">Find Us</div>
+          <h2>Our <span class="highlight">Location</span></h2>
+          <p>Come visit us at our campus in Hanumangarh, Rajasthan.</p>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56756.31!2d74.3!3d29.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3914e5b0b0b0b0b0%3A0x0!2sHanumangarh%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1"
+              width="100%"
+              height="350"
+              style="border:0; border-radius: 16px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Sanifort Pre-School Location">
+            </iframe>
+          </div>
+          <div class="dir-btn">
+            <a href="https://maps.google.com/?q=Hanumangarh,Rajasthan" target="_blank" class="btn btn-secondary">
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+
+          <!-- QR CODE -->
+          <div class="qr-box-wrap">
+            <h4>Quick Access QR Code</h4>
+            <p>Scan to visit our website or share with friends</p>
+            <div class="qr-placeholder">
+              <div class="qr-box">
+                <div class="qr-pattern">
+                  <div class="qr-corner tl"></div>
+                  <div class="qr-corner tr"></div>
+                  <div class="qr-corner bl"></div>
+                  <div class="qr-dots"></div>
+                </div>
+                <p>Scan Me!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHOOL TIMINGS -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-head">
+        <div class="label">School Hours</div>
+        <h2>School <span class="highlight">Timings</span></h2>
+      </div>
+      <div class="timings-grid">
+        <div class="timing-card">
+          <div class="timing-icon">🌅</div>
+          <h4>School Hours</h4>
+          <p>Monday – Saturday</p>
+          <p class="timing-time">8:00 AM – 2:00 PM</p>
+        </div>
+        <div class="timing-card">
+          <div class="timing-icon">🏢</div>
+          <h4>Office Hours</h4>
+          <p>Monday – Saturday</p>
+          <p class="timing-time">8:00 AM – 5:00 PM</p>
+        </div>
+        <div class="timing-card">
+          <div class="timing-icon">📞</div>
+          <h4>Phone Support</h4>
+          <p>Monday – Saturday</p>
+          <p class="timing-time">9:00 AM – 6:00 PM</p>
+        </div>
+        <div class="timing-card">
+          <div class="timing-icon">🚪</div>
+          <h4>Admission Office</h4>
+          <p>Monday – Friday</p>
+          <p class="timing-time">9:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid footer-grid-5">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <div class="footer-logo-icon">🌟</div>
+            <div class="footer-logo-text">
+              <span class="logo-main">Sanifort</span>
+              <span class="logo-sub">Pre-School</span>
+            </div>
+          </div>
+          <p>Nurturing young minds with love, creativity, and excellence since 2014.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919571148082" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html">Playgroup (2–3 yrs)</a></li>
+            <li><a href="programs.html">Nursery (3–4 yrs)</a></li>
+            <li><a href="programs.html">Kindergarten (4–6 yrs)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>School Tools</h4>
+          <ul>
+            <li><a href="dashboard.html">Parent Portal</a></li>
+            <li><a href="qr-system.html">QR Entry System</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Hanumangarh, Rajasthan</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:9571148082">9571148082</a></p>
+          <p><i class="fas fa-envelope"></i> info@sanifort.edu.in</p>
+          <p><i class="fas fa-clock"></i> Mon–Sat: 8:00 AM – 2:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sanifort Pre-School. All rights reserved. | Designed with ❤️ for little learners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919571148082?text=Hello!%20I%20want%20to%20know%20more%20about%20Sanifort%20Pre-School%20admissions." class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

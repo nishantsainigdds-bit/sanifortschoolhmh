@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sanifort Pre-School Admissions - Apply online for Playgroup, Nursery, and Kindergarten." />
+  <meta name="robots" content="index, follow" />
+  <title>Admissions | Sanifort Pre-School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌟</div>
+        <div class="logo-text">
+          <span class="logo-main">Sanifort</span>
+          <span class="logo-sub">Pre-School</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html" class="active">Admissions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admissions.html" class="nav-cta">Enroll Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+    <div class="page-hero-content">
+      <h1><span>Admissions</span> 2025–26</h1>
+      <p>Begin your child's incredible learning journey with us</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Admissions</span>
+      </div>
+    </div>
+    <div class="page-hero-deco">
+      <span>📝</span><span>🎒</span><span>⭐</span><span>🌟</span>
+    </div>
+  </section>
+
+  <!-- ADMISSION PROCESS -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-head">
+        <div class="label">How to Apply</div>
+        <h2>Simple <span class="highlight">Admission Process</span></h2>
+        <p>Getting your child enrolled at Sanifort is quick and easy — just 4 simple steps!</p>
+      </div>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">📋</div>
+          <h4>Fill the Form</h4>
+          <p>Complete the online admission form below with your child's and parent's details.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">📞</div>
+          <h4>Get a Call</h4>
+          <p>Our admissions team will call you within 24 hours to confirm your application.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">🏫</div>
+          <h4>School Visit</h4>
+          <p>Visit our campus with your child for a tour and interaction session.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="step-icon">🎉</div>
+          <h4>Confirm Seat</h4>
+          <p>Pay the registration fee and confirm your child's seat. Welcome to Sanifort!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSION FORM -->
+  <section class="section-pad bg-soft">
+    <div class="container">
+      <div class="form-shell">
+        <div class="form-shell-head">
+          <div class="label">Apply Now</div>
+          <h2>Online Admission <span class="highlight">Application Form</span></h2>
+          <p>Fill in the details below and we'll get back to you shortly.</p>
+        </div>
+        <form class="admission-form" id="admissionForm" novalidate>
+          <div class="fsec-title">👶 Child's Information</div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="childName">Child's Full Name *</label>
+              <input type="text" id="childName" name="childName" placeholder="Enter child's full name" required />
+            </div>
+            <div class="f-group">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="gender">Gender *</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="program">Program Applying For *</label>
+              <select id="program" name="program" required>
+                <option value="">Select Program</option>
+                <option value="playgroup">Playgroup (2–3 Years)</option>
+                <option value="nursery">Nursery (3–4 Years)</option>
+                <option value="lkg">LKG (4–5 Years)</option>
+                <option value="ukg">UKG (5–6 Years)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fsec-title">👨‍👩‍👧 Parent / Guardian Information</div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="parentName">Parent/Guardian Name *</label>
+              <input type="text" id="parentName" name="parentName" placeholder="Enter parent's full name" required />
+            </div>
+            <div class="f-group">
+              <label for="relation">Relation to Child *</label>
+              <select id="relation" name="relation" required>
+                <option value="">Select Relation</option>
+                <option value="father">Father</option>
+                <option value="mother">Mother</option>
+                <option value="guardian">Guardian</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="phone">Mobile Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required />
+            </div>
+            <div class="f-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter email address" />
+            </div>
+          </div>
+          <div class="f-group full">
+            <label for="address">Residential Address *</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your full address" required></textarea>
+          </div>
+
+          <div class="fsec-title">📝 Additional Information</div>
+          <div class="f-group full">
+            <label for="prevSchool">Previous School (if any)</label>
+            <input type="text" id="prevSchool" name="prevSchool" placeholder="Name of previous school or playgroup" />
+          </div>
+          <div class="f-group full">
+            <label for="message">Any Special Requirements or Message</label>
+            <textarea id="message" name="message" rows="3" placeholder="Any allergies, special needs, or questions..."></textarea>
+          </div>
+
+          <div class="f-group full">
+            <label class="f-check">
+              <input type="checkbox" id="terms" name="terms" required />
+              <span>I agree to the <a href="#">Terms & Conditions</a> and confirm that the information provided is accurate.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-large">
+            <i class="fas fa-paper-plane"></i> Submit Application
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">🎉</div>
+          <h3>Application Submitted Successfully!</h3>
+          <p>Thank you for applying to Sanifort Pre-School. Our admissions team will contact you within 24 hours.</p>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS REQUIRED -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-head">
+        <div class="label">Documents</div>
+        <h2>Documents <span class="highlight">Required</span></h2>
+      </div>
+      <div class="docs-grid">
+        <div class="doc-card"><i class="fas fa-file-alt"></i><p>Birth Certificate</p></div>
+        <div class="doc-card"><i class="fas fa-id-card"></i><p>Aadhar Card (Child)</p></div>
+        <div class="doc-card"><i class="fas fa-id-card"></i><p>Parent's Aadhar Card</p></div>
+        <div class="doc-card"><i class="fas fa-camera"></i><p>4 Passport Photos</p></div>
+        <div class="doc-card"><i class="fas fa-file-medical"></i><p>Vaccination Record</p></div>
+        <div class="doc-card"><i class="fas fa-home"></i><p>Address Proof</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid footer-grid-5">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <div class="footer-logo-icon">🌟</div>
+            <div class="footer-logo-text">
+              <span class="logo-main">Sanifort</span>
+              <span class="logo-sub">Pre-School</span>
+            </div>
+          </div>
+          <p>Nurturing young minds with love, creativity, and excellence since 2014.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919571148082" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html">Playgroup (2–3 yrs)</a></li>
+            <li><a href="programs.html">Nursery (3–4 yrs)</a></li>
+            <li><a href="programs.html">Kindergarten (4–6 yrs)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>School Tools</h4>
+          <ul>
+            <li><a href="dashboard.html">Parent Portal</a></li>
+            <li><a href="qr-system.html">QR Entry System</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Hanumangarh, Rajasthan</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:9571148082">9571148082</a></p>
+          <p><i class="fas fa-envelope"></i> info@sanifort.edu.in</p>
+          <p><i class="fas fa-clock"></i> Mon–Sat: 8:00 AM – 2:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sanifort Pre-School. All rights reserved. | Designed with ❤️ for little learners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919571148082?text=Hello!%20I%20want%20to%20know%20more%20about%20Sanifort%20Pre-School%20admissions." class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <script src="js/main.js"></script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Playgroup Program",
+    "description": "First steps into learning through sensory play, songs, and joyful social interaction for children aged 2–3 years.",
+    "provider": { "@type": "EducationalOrganization", "name": "Sanifort Pre-School", "url": "https://sanifort.edu.in" },
+    "educationalLevel": "Preschool",
+    "typicalAgeRange": "2-3"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Nursery Program",
+    "description": "Building language, creativity, and early math skills through engaging activities for children aged 3–4 years.",
+    "provider": { "@type": "EducationalOrganization", "name": "Sanifort Pre-School", "url": "https://sanifort.edu.in" },
+    "educationalLevel": "Preschool",
+    "typicalAgeRange": "3-4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Kindergarten Program",
+    "description": "School-readiness program with reading, writing, and critical thinking skills for children aged 4–6 years.",
+    "provider": { "@type": "EducationalOrganization", "name": "Sanifort Pre-School", "url": "https://sanifort.edu.in" },
+    "educationalLevel": "Kindergarten",
+    "typicalAgeRange": "4-6"
+  }
+]
+</script>
+</body>
+</html>
